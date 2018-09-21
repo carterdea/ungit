@@ -1,0 +1,151 @@
+@import "generic.less";
+
+// NOTE: To make these styles override styles that are lower in the sheet (e.g. commit.css, header.css, staging.css) I'm often being more specific than I need to be so this takes precendence w/o lots of `!important`
+
+.headerLogo {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjMiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjY3IDAgMTYzIDIxIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5he2ZpbGw6IzAwMH08L3N0eWxlPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTM2LjYsMTMuMWgxMC4ybC01LjQtOC43bC05LjksMTUuN0gxMjdsMTItMTguOWMwLjUtMC44LDEuNC0xLjIsMi40LTEuMmMwLjksMCwxLjgsMC40LDIuMywxLjJsMTIuMSwxOC45IGgtNC41bC0yLjEtMy41aC0xMC4zTDEzNi42LDEzLjEiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTE4My40LDE2LjVWMC4yaC0zLjh2MThjMCwwLjUsMC4yLDEsMC42LDEuM2MwLjQsMC40LDAuOSwwLjYsMS40LDAuNmgxNy40bDIuMy0zLjVMMTgzLjQsMTYuNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTIwLjIsMTMuNmMzLjcsMCw2LjctMyw2LjctNi43YzAtMy43LTMtNi43LTYuNy02LjdoLTE2Ljd2MTkuOWgzLjhWMy43aDEyLjZjMS44LDAsMy4yLDEuNCwzLjIsMy4yIGMwLDEuOC0xLjQsMy4yLTMuMiwzLjJsLTEwLjgsMGwxMS40LDEwaDUuNWwtNy43LTYuNEwxMjAuMiwxMy42Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik03OS45LDIwLjFjLTUuNSwwLTkuOS00LjQtOS45LTkuOWMwLTUuNSw0LjQtOS45LDkuOS05LjloMTEuNWM1LjUsMCw5LjksNC40LDkuOSw5LjljMCw1LjUtNC40LDkuOS05LjksOS45SDc5LjkgTTkxLjIsMTYuNmMzLjYsMCw2LjQtMi45LDYuNC02LjRjMC0zLjYtMi45LTYuNC02LjQtNi40aC0xMWMtMy41LDAtNi40LDIuOS02LjQsNi40czIuOSw2LjQsNi40LDYuNEg5MS4yIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNjMuOCwyMC4xYy01LjUsMC0xMC00LjQtMTAtOS45YzAtNS41LDQuNS05LjksMTAtOS45aDEzLjdsLTIuMywzLjVIMTY0Yy0zLjYsMC02LjUsMi45LTYuNSw2LjRjMCwzLjUsMi45LDYuNCw2LjUsNi40aDEzLjhsLTIuMiwzLjVIMTYzLjgiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIxMC41LDE2LjZjLTIuOSwwLTUuNC0yLTYuMi00LjdoMTYuNGwyLjItMy41aC0xOC42YzAuOC0yLjcsMy4zLTQuNyw2LjItNC43aDExLjJsMi4yLTMuNWgtMTMuN2MtNS41LDAtOS45LDQuNC05LjksOS45YzAsNS41LDQuNCw5LjksOS45LDkuOUgyMjJsMi4yLTMuNUgyMTAuNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjI2LDIuM2MwLTEsMC44LTEuOCwxLjgtMS44YzEsMCwxLjgsMC44LDEuOCwxLjhjMCwxLTAuOCwxLjgtMS44LDEuOEMyMjYuOCw0LjEsMjI2LDMuMywyMjYsMi4zIE0yMjcuOCw0LjZjMS4yLDAsMi4yLTEsMi4yLTIuMmMwLTEuMi0xLTIuMi0yLjItMi4yYy0xLjIsMC0yLjIsMS0yLjIsMi4yUzIyNi41LDQuNiwyMjcuOCw0LjYgTTIyNy42LDFjMC4zLDAsMC41LDAsMC42LDAuMWMwLjUsMC4xLDAuNSwwLjYsMC41LDAuN2MwLDAsMCwwLjEsMCwwLjJjMCwwLjEtMC4xLDAuMy0wLjMsMC40YzAsMCwwLDAtMC4xLDAuMWwwLjYsMWgtMC42bC0wLjUtMWgtMC4zdjFIMjI3VjFIMjI3LjYgTTIyNy43LDIuMWMwLjIsMCwwLjMsMCwwLjQtMC4yYzAuMSwwLDAuMS0wLjEsMC4xLTAuMmMwLTAuMS0wLjEtMC4yLTAuMi0wLjNjLTAuMS0wLjEtMC4yLTAuMS0wLjUtMC4xaC0wLjF2MC43SDIyNy43Ii8+PC9zdmc+);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: url(https://upload.wikimedia.org/wikipedia/commons/5/52/Spacer.gif);
+  height: 24px;
+  width: 110px !important;
+}
+
+.navbar.navbar-default {
+  box-shadow: none;
+}
+
+.navbar.navbar-default .arrowUp {
+  display: none;
+}
+
+.navbar.navbar-default .form-container .path-input-form .form-control {
+  font-size: 14px;
+  border: 1px solid #d8dbde;
+  box-shadow: none;
+}
+
+.navbar.navbar-default .backlink {
+  margin-top: 5px;
+}
+
+.navbar .glyphicon-circled {
+  margin-right: 10px;
+}
+
+.navbar .version {
+  font-size: 10px;
+  margin-left: 78px;
+}
+
+.form-control {
+  border: 1px solid #e5e6e6;
+  color: @text-color;
+}
+
+.staging.panel,
+.stash.panel {
+  background: @body-bg;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,0.05),
+              0 2px 4px 0 rgba(0,0,0,0.20),
+              0 0 1px 0 rgba(0,0,1,0.10);
+  color: @text-color;
+  z-index: 5;
+  position: relative;
+}
+
+.staging.panel .form-control,
+.staging.panel .amend {
+  margin-bottom: 5px;
+}
+
+.staging.panel .amend {
+  display: inline-block;
+}
+
+.staging.panel .checkmark {
+  color: #000;
+}
+
+.staging.panel .files .file .name {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+.staging.panel .files .file .new,
+.staging.panel .files .file .additions {
+  color: @brand-success;
+}
+
+.staging.panel .files .file .deleted,
+.staging.panel .files .file .deletions {
+  color: @brand-danger;
+}
+
+.staging.panel .arrowDown .arrow {
+  border-top: #fff;
+}
+
+.staging.panel .validationError {
+  color: @brand-danger;
+}
+
+.staging.panel .ignore,
+.staging.panel .discard {
+  color: rgba(0,0,0,0.3);
+}
+
+.stash-toggle.stash-toggle-text {
+  background-color: #ededee;
+  border: 1px solid #cbcccd;
+}
+
+.commit.highlighted .commit-box.panel {
+  background: #ededee;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,0.05),
+              0 2px 4px 0 rgba(0,0,0,0.20),
+              0 0 1px 0 rgba(0,0,1,0.10);
+}
+
+.commit .commit-box.panel .arrowRight .arrow {
+  border-left-color: #ededee;
+}
+
+.commit.highlighted .commit-box.panel .arrowRight .arrow {
+  border-left-color: #ededee;
+}
+
+.commit .commit-box.panel .arrowRight .shadow {
+  border-left-color: #f7f7f8;
+}
+
+.d2h-code-linenumber {
+  background: #ededee;
+}
+
+.d2h-cntx {
+  color: #878c90;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
