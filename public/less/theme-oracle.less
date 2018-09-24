@@ -32,11 +32,14 @@
 
 .navbar .glyphicon-circled {
   margin-right: 10px;
+  border-width: 2px;
+  padding: 5px 20px 5px 5px;
+  width: .5em;
 }
 
 .navbar .version {
   font-size: 10px;
-  margin-left: 78px;
+  padding-left: 78px !important;
 }
 
 .form-control {
@@ -118,6 +121,17 @@
 
 .commit .commit-box.panel .arrowRight .shadow {
   border-left-color: #f7f7f8;
+}
+
+.commit .commit-box > .panel-body .details .diff-wrapper {
+  background: #ededee !important;
+}
+
+.commit.selected .commit-box .details .diff-wrapper {
+  background: #fff !important;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,0.05),
+              0 2px 4px 0 rgba(0,0,0,0.20),
+              0 0 1px 0 rgba(0,0,1,0.10);
 }
 
 .d2h-code-linenumber {
